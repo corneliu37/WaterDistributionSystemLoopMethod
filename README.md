@@ -8,11 +8,11 @@ This Matlab software implements the Least Squares state estimator described in t
 
 2. Corneliu T.C. Arsene, Bogdan Gabrys, “Mixed simulation-state estimation in water distribution systems based on a least squares loop flows state estimator”, Applied Mathematical Modelling, DOI 10.1016/ j.apm.2013.06.012 , 2014. 
 
-3. Corneliu T. C. Arsene, Bogdan Gabrys, David Al-Dabass: Decision support system for water distribution systems based on neural networks and graphs theory for leakage detection. Expert Syst. Appl. 39(18): 13214-13224 (2012). 
+3. Corneliu T. C. Arsene, Bogdan Gabrys, David Al-Dabass: Decision support system for water distribution systems based on neural networks and graphs theory for leakage detection. Expert Syst. Appl. 39(18): 13214-13224, 2012. 
 
 4. Arsene, C.T.C., Bargiela, A., and Al-Dabass, D. “Modelling and Simulation of Network Systems based on Loop Flows Algorithms”, Int. J. of Simulation: Systems,Science & Technology Vol.5, No. 1 & 2, pp61-72, June 2004. 
 
-5. Arsene, C.T.C., & Bargiela, A., “Decision support for forecasting and fault diagnosis in water distribution systems – robust loop flows state estimation technique”, In Water Software Systems: theory and applications, Research Studies Press Ltd., UK, Vol. 1, pp. 133-145, 2001, ISBN: 0863802737. 
+5. Arsene, C.T.C., & Bargiela, A., “Decision support for forecasting and fault diagnosis in water distribution systems – robust loop flows state estimation technique”, In Water Software Systems: theory and applications, Research Studies Press Ltd., UK, Vol. 1, pp. 133-145, 2001. 
 
 6. Arsene, C.T.C., Bargiela, A., Al-Dabass, D., “Simulation of Network Systems based on Loop Flows Algorithms”, In the proceedings of the 7th Simulation Society Conference - UKSim 2004, Oxford, U.K., 2004, ISBN 1-84233-099-3, UKSIM-2004.
 
