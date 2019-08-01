@@ -1,25 +1,41 @@
 # WaterDistributionSystemLoopMethod
 
-Modelling and Simulation of Water Networks based on Least Square Loop Flows State Estimator 
+Simulator algorithm for water networks based on loop method.
 
-This Matlab software implements the Least Squares state estimator described in the below papers and which state estimator is based on the loop corrective flows and the variation of nodal demands as independent variables. 
+Simulation of water networks by using the loop method and Newton-Raphson numerical method (wat_dem1.m) : the simulation starts with running the Matlab function wat_dem1.m
 
-1. Corneliu T.C. Arsene, "Uncertainty Quantification of Water Distribution System Measurement Data based on a Least Squares Loop Flows State Estimator",  arXiv:1701.03147, https://arxiv.org/abs/1701.03147, 2017. 
+There are given the nodal consumptions, the characteristics of the pipes, head value of reference main head node, inflows/outflows.
 
-2. Corneliu T.C. Arsene, Bogdan Gabrys, “Mixed simulation-state estimation in water distribution systems based on a least squares loop flows state estimator”, Applied Mathematical Modelling, DOI 10.1016/ j.apm.2013.06.012 , 2014. 
+sim_demo_pb.m - simulation of water networks by using the loop method and Newton-Raphson numerical method.
 
-3. Corneliu T. C. Arsene, Bogdan Gabrys, David Al-Dabass: Decision support system for water distribution systems based on neural networks and graphs theory for leakage detection. Expert Syst. Appl. 39(18): 13214-13224, 2012. 
+determine_flowsi_pb.m - this function uses Depth First search to calculate the following variables: the loop incidence matrix Mlp, the topological incidence matrix Anp, initial pipe flows flows_i, chord/co-tree pipes.
 
-4. Arsene, C.T.C., Bargiela, A., and Al-Dabass, D. “Modelling and Simulation of Network Systems based on Loop Flows Algorithms”, Int. J. of Simulation: Systems,Science & Technology Vol.5, No. 1 & 2, pp61-72, June 2004. 
+shortest_path.m - This function calculated shortest path between two nodes in the spanning tree.
 
-5. Arsene, C.T.C., & Bargiela, A., “Decision support for forecasting and fault diagnosis in water distribution systems – robust loop flows state estimation technique”, In Water Software Systems: theory and applications, Research Studies Press Ltd., UK, Vol. 1, pp. 133-145, 2001. 
+This simulator can be applied to any water network not containing non-linear controlling hydraulic elements although some “minor modifications” would be necessary in the various Matlab files such as :
 
-6. Arsene, C.T.C., Bargiela, A., Al-Dabass, D., “Simulation of Network Systems based on Loop Flows Algorithms”, In the proceedings of the 7th Simulation Society Conference - UKSim 2004, Oxford, U.K., 2004, ISBN 1-84233-099-3, UKSIM-2004.
+in sim_demo_pb.m at line 98 the number of loops l is 28, so for a different water network the number of loops would be different so it is better to change the number 28 with the letter l which stands for the number of loops.
+other “minor modifications” would be for example in the file determine_flowsi_pb.m at line 408, to remove nodes 65, 61, 62, 35, 34 and node 33 which are fixed head nodes but in a different water network these numbers may not mean anything.
+other similar “minor modifications”.
+This algorithm would benefit also from the addition of non-linear controlling elements based for example on the paper Alvarruiz et al. (2018) “Efficient modeling of active control valves in water distribution systems using the loop method”, J. Water Resour. Plann. Manage.
 
-Please acknowledge the PhD project financed by the Nottingham Trent University of United Kingdom and Mr Corneliu Arsene if you are going to use this software anywhere in your work.  This is in addition to the license for this software which is in a different file. 
+The project has also a DoI: 10.5281/zenodo.3357138 (https://doi.org/10.5281/zenodo.3357138)
 
-It is provided here with no warranty. Direct all questions and requests to galenpalimpsestproject@gmail.com.
-Technical details (not to be confused by the name of the files):
+The license for this software is a Creative Commons Attribution 4.0 International License (CCL).
+
+The simulator algorithm based on the loop method is also described in the publications from below :
+
+Corneliu T.C. Arsene, "Uncertainty Quantification of Water Distribution System Measurement Data based on a Least Squares Loop Flows State Estimator", arXiv:1701.03147, https://arxiv.org/abs/1701.03147, 2017.
+
+Corneliu T.C. Arsene, Bogdan Gabrys, “Mixed simulation-state estimation in water distribution systems based on a least squares loop flows state estimator”, Applied Mathematical Modelling, DOI 10.1016/ j.apm.2013.06.012 , 2014.
+
+Corneliu T. C. Arsene, Bogdan Gabrys, David Al-Dabass: Decision support system for water distribution systems based on neural networks and graphs theory for leakage detection. Expert Syst. Appl. 39(18): 13214-13224, 2012.
+
+Arsene, C.T.C., Bargiela, A., and Al-Dabass, D. “Modelling and Simulation of Network Systems based on Loop Flows Algorithms”, Int. J. of Simulation: Systems,Science & Technology Vol.5, No. 1 & 2, pp61-72, June 2004.
+
+Arsene, C.T.C., & Bargiela, A., “Decision support for forecasting and fault diagnosis in water distribution systems – robust loop flows state estimation technique”, In Water Software Systems: theory and applications, Research Studies Press Ltd., UK, Vol. 1, pp. 133-145, 2001.
+
+Arsene, C.T.C., Bargiela, A., Al-Dabass, D., “Simulation of Network Systems based on Loop Flows Algorithms”, In the proceedings of the 7th Simulation Society Conference - UKSim 2004, Oxford, U.K., 2004, ISBN 1-84233-099-3, UKSIM-2004.
 
 
 
