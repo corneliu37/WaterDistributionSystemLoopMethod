@@ -22,7 +22,7 @@ This simulator can be applied to any water network not containing non-linear con
 
 This algorithm would benefit also from the addition of non-linear controlling elements based for example on the paper Alvarruiz et al. (2018) “Efficient modeling of active control valves in water distribution systems using the loop method”, J. Water Resour. Plann. Manage.
 
-The project has also a DoI: 10.5281/zenodo.3357138 (https://doi.org/10.5281/zenodo.3357138)
+The project has also a DoI: 10.5281/zenodo.3357455 (https://doi.org/10.5281/zenodo.3357455)
 
 The license for this software is a Creative Commons Attribution 4.0 International License (CCL).
 
